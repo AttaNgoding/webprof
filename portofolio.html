@@ -7,18 +7,36 @@
 </head>
 <body>
 
+
+<canvas></canvas>
+
 <header>
-    <a href="index.html" class="logo">Atta</a>
+    <a href="index.html" class="logo">Profile</a>
 
     <nav>
         <a href="index.html" class="nav-link">Home</a>
-        <a href="portfolio.html" class="active">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="portofolio.html" class="active">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
     </nav>
+    <div class="mode-toggle">
+        <input type="checkbox" id="mode-switch">
+        <label for="mode-switch" class="toggle-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </header>
 
 <section class="portfolio">
-    <h2>My Portfolio</h2>
+    <br>
+    <br>
+    <h2>My Portofolio</h2>
 
     <div class="portfolio-container">
         <div class="portfolio-box">
@@ -36,9 +54,28 @@
                 <p>UI Design</p>
             </div>
         </div>
+
+        <div class="portfolio-box">
+            <img src="ava.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Project 3</h4>
+                <p>Mobile App</p>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="ava.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Project 4</h4>
+                <p>Web Application</p>
+            </div>
+        </div>
     </div>
 </section>
 
-<script src="script.js"></script>
+  <script src="script.js">
+</script>
+
+
 </body>
 </html>
