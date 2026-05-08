@@ -1082,3 +1082,32 @@ nav,
         transform: translateX(0) scale(1);
     }
 }
+
+/* ===== FOOTER ===== */
+footer {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 2rem 9%;
+    border-top: 1px solid var(--accent-color);
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer .social-icons {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+footer .social-icons a {
+    margin: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.6rem;
+}
