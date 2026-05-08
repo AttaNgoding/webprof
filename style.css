@@ -186,7 +186,7 @@ nav{
         border-left: 3px solid var(--accent-color);
         border-bottom: 3px solid var(--accent-color);
         border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
+        padding: 1rem;
         background-color: var(--card-bg);
         border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
@@ -295,7 +295,7 @@ span{
 }
 
 .btn:hover{
-    transform: scale3d(1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
     background-color: var(--accent-color);
     color: var(--bg-color);
     box-shadow: 0 0 25px var(--accent-color);
@@ -861,7 +861,7 @@ section {
         opacity: 1;
         box-shadow: 
             0 0 6px 2px rgba(255,255,255,0.9),
-            4px 0 20px 4px rgba(255,255,255,0.),
+            4px 0 20px 4px rgba(255,255,255,0.4),
             8px 0 40px 8px rgba(213,8,8,0.3),
             15px 0 60px 10px rgba(213,8,8,0.1);
     }
