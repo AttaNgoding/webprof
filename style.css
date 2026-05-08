@@ -972,7 +972,7 @@ nav,
     }
 }
 
-/* ===== PAGE NAV MOBILE ===== */
+
 .page-nav {
     display: none;
     position: fixed;
@@ -1004,15 +1004,23 @@ nav,
     box-shadow: 0 0 25px rgba(213,8,8,0.8);
 }
 
-/* Hanya muncul di mobile */
 @media (max-width: 768px) {
     .page-nav {
         display: flex;
+        justify-content: space-between;
+    }
+
+    .page-btn.right {
+        margin-left: auto;
+    }
+
+    .page-btn.left {
+        margin-right: auto;
     }
 }
 
 
-/* ===== FIX MOBILE PORTFOLIO ===== */
+
 @media (max-width: 768px) {
     .portfolio {
         padding: 8rem 5% 5rem;
@@ -1031,7 +1039,6 @@ nav,
     }
 }
 
-/* ===== FIX PAGE NAV ===== */
 @media (max-width: 768px) {
     .page-nav {
         display: flex;
@@ -1044,5 +1051,34 @@ nav,
         height: 50px;
         font-size: 3rem;
         line-height: 1;
+    }
+}
+
+
+.page-btn {
+    opacity: 0;
+    animation: btnPop 1.5s ease forwards;
+}
+
+.page-btn.left {
+    animation-delay: 1.3s;
+    transform: translateX(-30px);
+}
+
+.page-btn.right {
+    animation-delay: 1.5s;
+    transform: translateX(30px);
+}
+
+@keyframes btnPop {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(0) scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
     }
 }
