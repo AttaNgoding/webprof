@@ -1010,3 +1010,39 @@ nav,
         display: flex;
     }
 }
+
+
+/* ===== FIX MOBILE PORTFOLIO ===== */
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 8rem 5% 5rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 5rem;
+        padding-bottom: 8rem;
+    }
+
+    .portfolio-box {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* ===== FIX PAGE NAV ===== */
+@media (max-width: 768px) {
+    .page-nav {
+        display: flex;
+        bottom: 20px;
+        padding: 0 30px;
+    }
+
+    .page-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 3rem;
+        line-height: 1;
+    }
+}
