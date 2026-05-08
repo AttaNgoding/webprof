@@ -1029,7 +1029,7 @@ nav,
     .portfolio-container {
         grid-template-columns: 1fr;
         max-width: 100%;
-        gap: 5rem;
+        gap: 10rem;
         padding-bottom: 8rem;
     }
 
